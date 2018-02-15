@@ -1,7 +1,7 @@
 require 'discordrb'
 require 'nokogiri'
 
-token = File.read('token')
+token = File.read('token').strip
 
 bot = Discordrb::Commands::CommandBot.new token: token, prefix: '.'
 
